@@ -14995,259 +14995,6 @@ Number of missing values: 0
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_imputed</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s1">&#39; ?&#39;</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_imputed</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_imputed</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>index</th>
-      <th>Age</th>
-      <th>Sex</th>
-      <th>ChestPainType</th>
-      <th>RestingBP</th>
-      <th>Cholesterol</th>
-      <th>FastingBS</th>
-      <th>RestingECG</th>
-      <th>MaxHR</th>
-      <th>ExerciseAngina</th>
-      <th>Oldpeak</th>
-      <th>ST_Slope</th>
-      <th>HeartDisease</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>40</td>
-      <td>M</td>
-      <td>ATA</td>
-      <td>140</td>
-      <td>289</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>172</td>
-      <td>N</td>
-      <td>0.0</td>
-      <td>Up</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>49</td>
-      <td>F</td>
-      <td>NAP</td>
-      <td>160</td>
-      <td>180</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>156</td>
-      <td>N</td>
-      <td>1.0</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>37</td>
-      <td>M</td>
-      <td>ATA</td>
-      <td>130</td>
-      <td>283</td>
-      <td>0</td>
-      <td>ST</td>
-      <td>98</td>
-      <td>N</td>
-      <td>0.0</td>
-      <td>Up</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3</td>
-      <td>48</td>
-      <td>F</td>
-      <td>ASY</td>
-      <td>138</td>
-      <td>214</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>108</td>
-      <td>Y</td>
-      <td>1.5</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4</td>
-      <td>54</td>
-      <td>M</td>
-      <td>NAP</td>
-      <td>150</td>
-      <td>195</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>122</td>
-      <td>N</td>
-      <td>0.0</td>
-      <td>Up</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>913</th>
-      <td>913</td>
-      <td>45</td>
-      <td>M</td>
-      <td>TA</td>
-      <td>110</td>
-      <td>264</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>132</td>
-      <td>N</td>
-      <td>1.2</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>914</th>
-      <td>914</td>
-      <td>68</td>
-      <td>M</td>
-      <td>ASY</td>
-      <td>144</td>
-      <td>193</td>
-      <td>1</td>
-      <td>Normal</td>
-      <td>141</td>
-      <td>N</td>
-      <td>3.4</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>915</th>
-      <td>915</td>
-      <td>57</td>
-      <td>M</td>
-      <td>ASY</td>
-      <td>130</td>
-      <td>131</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>115</td>
-      <td>Y</td>
-      <td>1.2</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>916</th>
-      <td>916</td>
-      <td>57</td>
-      <td>F</td>
-      <td>ATA</td>
-      <td>130</td>
-      <td>236</td>
-      <td>0</td>
-      <td>LVH</td>
-      <td>174</td>
-      <td>N</td>
-      <td>0.0</td>
-      <td>Flat</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>917</th>
-      <td>917</td>
-      <td>38</td>
-      <td>M</td>
-      <td>NAP</td>
-      <td>138</td>
-      <td>175</td>
-      <td>0</td>
-      <td>Normal</td>
-      <td>173</td>
-      <td>N</td>
-      <td>0.0</td>
-      <td>Up</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>918 rows × 13 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15348,7 +15095,7 @@ None
 <tbody>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">Age</td>
+  <td style="text-align:center"><code>Age</code></td>
   <td style="text-align:center">Numerical int</td>
   <td style="text-align:center">How old the patient is (yrs)</td>
   <td>NA</td>
@@ -15356,7 +15103,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">Sex</td>
+  <td style="text-align:center"><code>Sex</code></td>
   <td style="text-align:center">Categorical str</td>
   <td style="text-align:center">The biological gender of the patient</td>
   <td>{<strong>M</strong>: Male, <strong>F</strong>: Female}</td>
@@ -15364,7 +15111,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">ChestPainType</td>
+  <td style="text-align:center"><code>ChestPainType</code></td>
   <td style="text-align:center">Categorical str</td>
   <td style="text-align:center">The chest pain condition of the patient</td>
   <td>{<strong>TA</strong>: Typical Angina, <strong>ATA</strong>: Atypical Angina, <strong>NAP</strong>: Non-Anginal Pain, <strong>ASY</strong>: Asymptomatic}</td>
@@ -15372,7 +15119,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">RestingBP</td>
+  <td style="text-align:center"><code>RestingBP</code></td>
   <td style="text-align:center">Numerical int</td>
   <td style="text-align:center">The resting blood pressure (mmHg)</td>
   <td>NA</td>
@@ -15380,7 +15127,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">Cholesterol</td>
+  <td style="text-align:center"><code>Cholesterol</code></td>
   <td style="text-align:center">Numerical int</td>
   <td style="text-align:center">The cholesterol level of the patient (mm/dl)</td>
   <td>NA</td>
@@ -15388,15 +15135,15 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">FastingBS</td>
+  <td style="text-align:center"><code>FastingBS</code></td>
   <td style="text-align:center">Categorical int</td>
-  <td style="text-align:center">The fasting blood suger level of the patient</td>
+  <td style="text-align:center">The fasting blood sugar level of the patient</td>
   <td>{<strong>1</strong>: if FastingBS &gt; 120 (mg/dl), <strong>0</strong>: otherwise }</td>
   <td></td>
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">RestingECG</td>
+  <td style="text-align:center"><code>RestingECG</code></td>
   <td style="text-align:center">Categorical str</td>
   <td style="text-align:center">The resting electrocardiogram results of the patient</td>
   <td>{<strong>Normal</strong>: Normal, <strong>ST</strong>: Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of &gt; 0.05 mV), <strong>LVH</strong>: Showing probable or definite left ventricular hypertrophy by Estes' criteria}</td>
@@ -15404,7 +15151,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">MaxHR</td>
+  <td style="text-align:center"><code>MaxHR</code></td>
   <td style="text-align:center">Numerical int</td>
   <td style="text-align:center">The maximum heart rate recorded in the patient</td>
   <td>NA</td>
@@ -15412,7 +15159,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">ExerciseAngina</td>
+  <td style="text-align:center"><code>ExerciseAngina</code></td>
   <td style="text-align:center">Categorical str</td>
   <td style="text-align:center">Whether the patient has exersice-induced angina</td>
   <td>{<strong>Y</strong>: Yes, <strong>N</strong>: No}</td>
@@ -15420,15 +15167,15 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">OldPeak</td>
+  <td style="text-align:center"><code>OldPeak</code></td>
   <td style="text-align:center">Numerical float</td>
-  <td style="text-align:center">ST numeric value measured in depression</td>
+  <td style="text-align:center">ST segment value of the patient</td>
   <td>NA</td>
   <td></td>
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">ST_Slope</td>
+  <td style="text-align:center"><code>ST_Slope</code></td>
   <td style="text-align:center">Categorical str</td>
   <td style="text-align:center">Slope of the peak exercise ST segment</td>
   <td>{<strong>Up</strong>: Upsloping, <strong>Flat</strong>: Flat, <strong>Down</strong>: Downsloping}</td>
@@ -15436,7 +15183,7 @@ None
 </tr>
 <tr>
   <td style="text-align:center"></td>
-  <td style="text-align:center">HeartDisease</td>
+  <td style="text-align:center"><code>HeartDisease</code></td>
   <td style="text-align:center">Categorical int</td>
   <td style="text-align:center">Whether the patient is likely to have heart failure</td>
   <td>{<strong>1</strong>: Likely to have heart failure, <strong>0</strong>: Not likely to have heart failure }</td>
@@ -15455,65 +15202,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The dataset holds 12 <code>features</code>:</p>
-<ol>
-<li><p><code>Age</code>: How old the patient is (yrs)</p>
-</li>
-<li><p><code>Sex</code>: The biological gender of the patient</p>
-<ul>
-<li>M: Male</li>
-<li>F: Female<br><br></li>
-</ul>
-</li>
-<li><p><code>ChestPainType</code>: The specific chest pain condition</p>
-<ul>
-<li>TA: Typical Angina</li>
-<li>ATA: Atypical Angina</li>
-<li>NAP: Non-Anginal Pain</li>
-<li>ASY: Asymptomatic<br><br></li>
-</ul>
-</li>
-<li><p><code>RestingBP</code>: Resting blood pressure (mmHg)</p>
-</li>
-<li><p><code>Cholesterol</code>: Serum cholesterol (mm/dl)</p>
-</li>
-<li><p><code>FastingBS</code>: Fasting blood sugar</p>
-<ul>
-<li>1: if FastingBS &gt; 120 (mg/dl)</li>
-<li>0: otherwise<br><br></li>
-</ul>
-</li>
-<li><p><code>RestingECG</code>: Resting electrocardiogram results</p>
-<ul>
-<li>Normal: Normal</li>
-<li>ST: Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of &gt; 0.05 mV)</li>
-<li>LVH: Showing probable or definite left ventricular hypertrophy by Estes' criteria<br><br></li>
-</ul>
-</li>
-<li><p><code>MaxHR</code>: The maximum heart rate achieved</p>
-</li>
-<li><p><code>ExerciseAngina</code>: Exercise-induced angina</p>
-<ul>
-<li>Y: Yes</li>
-<li>N: No<br><br></li>
-</ul>
-</li>
-<li><p><code>Oldpeak</code>: ST Numeric value measured in depression</p>
-</li>
-<li><p><code>ST_Slope</code>: Slope of the peak exercise ST segment</p>
-<ul>
-<li>Up: Upsloping</li>
-<li>Flat: Flat</li>
-<li>Down: Downsloping <br><br></li>
-</ul>
-</li>
-<li><p><code>HeartDisease</code>: Output class</p>
-<ul>
-<li>1: Likely to have heart failure</li>
-<li>0: Not likely to have heart failure</li>
-</ul>
-</li>
-</ol>
+<p>Since all of our features are medically related to heart conditions and failure, we will not remove any features from our dataset.</p>
 
 </div>
 </div>
@@ -15525,25 +15214,54 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We will divide our features between categorical and numerical:<br><br>
-<strong>Catagorical</strong> Features:</p>
-<ul>
-<li>Sex</li>
-<li>cp</li>
-<li>FastingBS</li>
-<li>RestingECG</li>
-<li>ExerciseAngina</li>
-<li>ST_Slope</li>
-<li>HeartDisease</li>
-</ul>
-<p><strong>Numeric</strong> Features:</p>
-<ul>
-<li>Age</li>
-<li>RestingBP</li>
-<li>Cholesterol</li>
-<li>MaxHR</li>
-<li>Oldpeak</li>
-</ul>
+<h3 id="Cross-Product-Features">Cross Product Features<a class="anchor-link" href="#Cross-Product-Features">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Since our dataset has 12 features, including our target feature, and we don't want our performance to suffer due to overfitting, we will create 2 cross-product features.</p>
+<p><code>Age</code> &amp; <code>Sex</code>: Regarding heart failures and condition, older people are more likely to suffer heart failure. Looking only at gender, men are more at risk of having a heart faiure than women. The combination of these features would capture the effect that age and gender have on the likelihood of suffering heart failure. Therefore, we believe it is worth further exploring by combining these features into a cross product.</p>
+<p><code>Cholesterol</code> &amp; <code>RestingBP</code>: Cholesterol greartly affects the likelihood of someong having a heart failure. However, the team struggled to choose whether to combine it with <code>RestingBP</code> or <code>FastingBS</code>. Both features also affect the likelihood of heart failure. However, high blood pressure is a more consistant and reliable factor in patients who have heart failure. Additionally, high blood pressure is the leading cause of heart failure in the US. High blood sugar levels can also damage nerves and blood vessels, but it is less reliable since not all people with high blood sugar levels suffer heart failure in their lifetime. Therfore, we chose to create a cross product feature from <code>Cholesterol</code> and <code>RestingBP</code>.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Evaluation-Method">Evaluation Method<a class="anchor-link" href="#Evaluation-Method">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Dataset-Splitting-Method">Dataset Splitting Method<a class="anchor-link" href="#Dataset-Splitting-Method">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For this dataset, we will split it using the stratified 10-fold cross validation. Since we only have 918 observations, we need to maximize the use of our dataset. This method will also ensure that the subsets are as evenly distributed as possible, so that our model's performance does not skew towards one class or the other.</p>
 
 </div>
 </div>
@@ -15575,27 +15293,39 @@ None
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
-<span class="c1"># define objects that can encode each variable as integer    </span>
+<span class="c1"># define vars to encode as integer    </span>
 <span class="n">encoders</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-<span class="n">categorical_headers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span><span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span><span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span><span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">,</span><span class="s1">&#39;ST_Slope&#39;</span><span class="p">]</span>
+<span class="n">categorical_headers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Sex&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ST_Slope&#39;</span>
+<span class="p">]</span>
 
-<span class="c1"># train all encoders (special case the target &#39;income&#39;)</span>
+<span class="c1"># train all encoders</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">categorical_headers</span><span class="p">:</span>
     <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-
-    <span class="c1"># integer encode strings that are features</span>
-    <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span> <span class="c1"># save the encoder</span>
-    <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="o">+</span><span class="s1">&#39;_int&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">col</span> <span class="o">==</span> <span class="s1">&#39;HeartDisease&#39;</span><span class="p">:</span>
+        <span class="n">tmp</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+        <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># integer encode strings that are features</span>
+        <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span> <span class="c1"># save the encoder</span>
+        <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="o">+</span><span class="s1">&#39;_int&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">encoders</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
 
 <span class="c1"># scale numeric, continuous variables</span>
-<span class="n">numeric_headers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;RestingBP&quot;</span><span class="p">,</span> <span class="s2">&quot;Cholesterol&quot;</span><span class="p">,</span><span class="s2">&quot;MaxHR&quot;</span><span class="p">]</span>
+<span class="n">numeric_headers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Age&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;RestingBP&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Cholesterol&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MaxHR&quot;</span>
+<span class="p">]</span>
 
-<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">numeric_headers</span><span class="p">:</span>
-    <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-    
-    <span class="n">ss</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
-    <span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_imputed</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-    
+<span class="n">ss</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">df_imputed</span><span class="p">[</span><span class="n">numeric_headers</span><span class="p">]</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_imputed</span><span class="p">[</span><span class="n">numeric_headers</span><span class="p">])</span>
+
 <span class="n">include_header</span> <span class="o">=</span><span class="p">[</span><span class="s2">&quot;FastingBS&quot;</span><span class="p">,</span><span class="s2">&quot;Oldpeak&quot;</span><span class="p">]</span>
 <span class="n">df_imputed</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -15777,12 +15507,13 @@ None
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s start without any feature preprocessing</span>
 <span class="n">categorical_headers_ints</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="s1">&#39;_int&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">categorical_headers</span><span class="p">]</span>
-
-<span class="c1"># we will forego one-hot encoding right now and instead just use all inputs as-is </span>
-<span class="c1"># this is just to get an example running in Keras (its not a good idea)</span>
 <span class="n">feature_columns</span> <span class="o">=</span> <span class="n">categorical_headers_ints</span><span class="o">+</span><span class="n">numeric_headers</span><span class="o">+</span><span class="n">include_header</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">feature_columns</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">pp</span> <span class="o">=</span> <span class="n">pprint</span><span class="o">.</span><span class="n">PrettyPrinter</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We will use the following features:&quot;</span><span class="p">)</span>
+<span class="n">pp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">feature_columns</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15802,7 +15533,18 @@ None
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;Sex_int&#39;, &#39;ChestPainType_int&#39;, &#39;RestingECG_int&#39;, &#39;ExerciseAngina_int&#39;, &#39;ST_Slope_int&#39;, &#39;Age&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;MaxHR&#39;, &#39;FastingBS&#39;, &#39;Oldpeak&#39;]
+<pre>We will use the following features:
+[   &#39;Sex_int&#39;,
+    &#39;ChestPainType_int&#39;,
+    &#39;RestingECG_int&#39;,
+    &#39;ExerciseAngina_int&#39;,
+    &#39;ST_Slope_int&#39;,
+    &#39;Age&#39;,
+    &#39;RestingBP&#39;,
+    &#39;Cholesterol&#39;,
+    &#39;MaxHR&#39;,
+    &#39;FastingBS&#39;,
+    &#39;Oldpeak&#39;]
 </pre>
 </div>
 </div>
@@ -15832,7 +15574,7 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15842,7 +15584,7 @@ None
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we want to predict the X and y data as follows:</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_imputed</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">df_imputed</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1"># get the labels we want</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_imputed</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 
 <span class="n">num_cv_iterations</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">num_instances</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
@@ -15854,6 +15596,27 @@ None
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>StratifiedKFold(n_splits=10, random_state=None, shuffle=False)
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15893,7 +15656,7 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15915,7 +15678,30 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>n_samples: 918
+n_features: 11
+n_classes: 2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15938,7 +15724,43 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Number of instances in each class:[410 508]
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15985,7 +15807,45 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(0.6958823529411765, 0.9215686274509803)</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16014,6 +15874,38 @@ None
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>We will use the following 11 features:
+[   &#39;Sex_int&#39;,
+    &#39;ChestPainType_int&#39;,
+    &#39;RestingECG_int&#39;,
+    &#39;ExerciseAngina_int&#39;,
+    &#39;ST_Slope_int&#39;,
+    &#39;Age&#39;,
+    &#39;RestingBP&#39;,
+    &#39;Cholesterol&#39;,
+    &#39;MaxHR&#39;,
+    &#39;FastingBS&#39;,
+    &#39;Oldpeak&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -16037,25 +15929,8 @@ None
 <span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Model</span>
 <span class="kn">from</span> <span class="nn">tensorflow.keras.utils</span> <span class="kn">import</span> <span class="n">plot_model</span>
 <span class="kn">from</span> <span class="nn">tensorflow.keras.metrics</span> <span class="kn">import</span> <span class="n">Recall</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;KMP_DUPLICATE_LIB_OK&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;True&#39;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;KMP_DUPLICATE_LIB_OK&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;True&#39;</span>
 </pre></div>
 
      </div>
@@ -16090,7 +15965,7 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16111,6 +15986,79 @@ None
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Model: &#34;model&#34;
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 11)]              0         
+                                                                 
+ dense (Dense)               (None, 10)                120       
+                                                                 
+ dense_1 (Dense)             (None, 5)                 55        
+                                                                 
+ dense_2 (Dense)             (None, 1)                 6         
+                                                                 
+=================================================================
+Total params: 181
+Trainable params: 181
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/12
+26/26 [==============================] - 1s 2ms/step - loss: 0.2857 - recall: 0.2445
+Epoch 2/12
+26/26 [==============================] - 0s 2ms/step - loss: 0.2495 - recall: 0.4498
+Epoch 3/12
+26/26 [==============================] - 0s 2ms/step - loss: 0.2248 - recall: 0.6092
+Epoch 4/12
+26/26 [==============================] - 0s 2ms/step - loss: 0.2071 - recall: 0.7183
+Epoch 5/12
+26/26 [==============================] - 0s 2ms/step - loss: 0.1935 - recall: 0.7795
+Epoch 6/12
+26/26 [==============================] - 0s 1ms/step - loss: 0.1825 - recall: 0.8057
+Epoch 7/12
+26/26 [==============================] - 0s 2ms/step - loss: 0.1735 - recall: 0.8231
+Epoch 8/12
+26/26 [==============================] - 0s 1ms/step - loss: 0.1660 - recall: 0.8428
+Epoch 9/12
+26/26 [==============================] - 0s 1ms/step - loss: 0.1596 - recall: 0.8515
+Epoch 10/12
+26/26 [==============================] - 0s 1ms/step - loss: 0.1543 - recall: 0.8515
+Epoch 11/12
+26/26 [==============================] - 0s 1ms/step - loss: 0.1498 - recall: 0.8537
+Epoch 12/12
+26/26 [==============================] - 0s 3ms/step - loss: 0.1460 - recall: 0.8559
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;keras.callbacks.History at 0x1be2fb92ac0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16128,7 +16076,7 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16144,7 +16092,28 @@ None
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>You must install pydot (`pip install pydot`) and install graphviz (see instructions at https://graphviz.gitlab.io/download/) for plot_model to work.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16161,6 +16130,38 @@ None
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3/3 [==============================] - 0s 1ms/step
+[[32  9]
+ [11 39]]
+              precision    recall  f1-score   support
+
+           0       0.74      0.78      0.76        41
+           1       0.81      0.78      0.80        50
+
+    accuracy                           0.78        91
+   macro avg       0.78      0.78      0.78        91
+weighted avg       0.78      0.78      0.78        91
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
